@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌高级搜索</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background-color: #f4f4f4;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>谷歌高级搜索</h1>
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="all_words" placeholder="所有这些单词：" required>
+        <input type="text" name="exact_phrase" placeholder="这个确切的单词或短语：" required>
+        <input type="text" name="any_words" placeholder="以下任何单词：" required>
+        <input type="text" name="not_words" placeholder="不包含以下单词：" required>
+        <br>
+        <button type="submit">高级搜索</button>
+    </form>
+    <div class="nav">
+        <a href="index.html">返回常规搜索</a>
+    </div>
+</body>
+<link rel="stylesheet" href="page.css">
+
+</html>

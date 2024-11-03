@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Adjust for smaller screens */
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 12px;
+    background-color: #fff; /* Contrast background for container */
+    max-width: 90%;
+}
+
+.search-box {
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    padding: 12px 20px; /* Larger padding for comfort */
+    width: 100%; /* Responsive width */
+    max-width: 400px;
+    margin: 10px 0;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease; /* Smooth focus effect */
+}
+
+    .search-box:focus {
+        outline: none;
+        box-shadow: 0 0 6px rgba(26, 115, 232, 0.3); /* Highlight on focus */
+    }
+
+.search-button,
+.lucky-button {
+    background-color: #f8f8f8;
+    color: #1a73e8;
+    border: 1px solid #1a73e8;
+    border-radius: 24px;
+    padding: 10px 24px; /* Wider padding for better touch targets */
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover */
+}
+
+    .search-button:hover,
+    .lucky-button:hover {
+        background-color: #e8f0fe;
+        transform: scale(1.05); /* Slight scale on hover for feedback */
+    }
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Evenly spaced links */
+    flex-wrap: wrap; /* Wrap links if screen is too small */
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .search-box {
+        max-width: 300px;
+    }
+
+    .search-button,
+    .lucky-button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
